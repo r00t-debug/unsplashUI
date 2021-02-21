@@ -64,26 +64,14 @@ export default {
         })
       }
     })
-
-    let prevScrollPos = window.pageYOffset
-    window.onscroll = function () {
-      let currentScrollPos = window.pageYOffset
-      if (prevScrollPos > currentScrollPos) {
-        document.getElementById('navbar').style.top = '0'
-      } else {
-        document.getElementById('navbar').style.top = '-52px'
-      }
-      prevScrollPos = currentScrollPos
-    }
   }
 }
-
 </script>
 
 <style>
   #navbar {
     transition: top 0.3s;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(10px);
   }
 

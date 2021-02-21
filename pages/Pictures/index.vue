@@ -34,7 +34,7 @@ export default {
     }
 
     await axios
-      .get('https://api.unsplash.com/photos?page=1&per_page=30', config)
+      .get('https://api.unsplash.com/photos?page=1&per_page=20', config)
       .then((res) => {
         this.pictures = res.data
       })
@@ -67,5 +67,11 @@ export default {
 #sec:hover:after {
   width: 100%;
   background: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 2.5rem;
+  }
 }
 </style>
