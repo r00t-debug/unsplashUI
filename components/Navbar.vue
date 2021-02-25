@@ -71,8 +71,8 @@ export default {
 <style>
   #navbar {
     transition: top 0.3s;
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
+    background-color: rgba(240, 240, 240, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
   }
 
   #nav {

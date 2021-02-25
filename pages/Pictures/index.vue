@@ -1,13 +1,11 @@
 <template>
-  <div class="pictures">
-    <!-- <div id="sec">
-      <a href="nigga_soda">nigga soda</a>
-    </div> -->
-    <div class="section">
-      <div class="columns is-multiline">
-        <div v-for="picture in pictures" :key="picture.id" class="column is-3">
-          <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" />
-        </div>
+  <!-- <div id="sec">
+    <a href="nigga_soda">nigga soda</a>
+  </div> -->
+  <div class="section">
+    <div class="columns is-multiline">
+      <div v-for="picture in pictures" :key="picture.id" class="column is-3">
+        <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" />
       </div>
     </div>
   </div>
@@ -71,7 +69,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 2.5rem;
+    padding: 6rem 2.5rem;
   }
 }
 </style>
