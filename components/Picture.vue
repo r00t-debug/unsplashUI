@@ -5,7 +5,7 @@
       <button class="button is-small is-light">
         View
       </button>
-      <a href="#" class="button is-small is-primary is-light">Download</a>
+      <a class="button is-small is-primary is-light" :href="download" target="_blank">Download</a>
     </div>
   </div>
 </template>
@@ -19,6 +19,10 @@ export default {
       default: null
     },
     alternative: {
+      type: String,
+      default: null
+    },
+    download: {
       type: String,
       default: null
     }

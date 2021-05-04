@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright&copy; 2021 <strong>Nigger inc.</strong> All rights reserved..
+        Copyright&copy; 2021 <strong>Imaginary company</strong> All rights reserved..
       </p>
     </div>
   </footer>

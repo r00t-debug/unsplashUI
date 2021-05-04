@@ -1,11 +1,8 @@
 <template>
-  <!-- <div id="sec">
-    <a href="nigga_soda">nigga soda</a>
-  </div> -->
   <div class="section">
     <div class="columns is-multiline">
       <div v-for="picture in pictures" :key="picture.id" class="column is-3">
-        <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" />
+        <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" :download="picture.urls.raw" />
       </div>
     </div>
   </div>
@@ -46,25 +43,6 @@ export default {
 <style>
 .section {
   padding: 6rem;
-}
-
-#sec {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 3px;
-}
-#sec:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-#sec:hover:after {
-  width: 100%;
-  background: blue;
 }
 
 @media screen and (max-width: 768px) {
