@@ -1,6 +1,9 @@
 <template>
   <div class="picture">
     <img :src="source" :alt="alternative">
+    <h5 class="picture_title">
+      {{ title }}
+    </h5>
     <div class="buttones">
       <button class="button is-small is-light">
         View
@@ -22,6 +25,10 @@ export default {
       type: String,
       default: null
     },
+    title: {
+      type: String,
+      default: 'This image has no title yet'
+    },
     download: {
       type: String,
       default: null
@@ -39,6 +46,14 @@ export default {
 
   .picture img {
     border-radius: 8px;
+  }
+
+  .picture .picture_title {
+    width: 90%;
+    height: 100%;
+    line-height: 1.2;
+    text-align: center;
+    margin: 12px auto 0 auto;
   }
 
   .buttones {

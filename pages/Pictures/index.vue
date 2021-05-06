@@ -2,7 +2,7 @@
   <div class="section">
     <div class="columns is-multiline">
       <div v-for="picture in pictures" :key="picture.id" class="column is-3">
-        <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" :download="picture.urls.raw" />
+        <Picture :source="picture.urls.raw + '&h=720&w=1280&fit=crop'" :alternative="picture.description" :title="picture.alt_description" :download="picture.urls.raw" />
       </div>
     </div>
   </div>
