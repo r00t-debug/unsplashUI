@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <div class="spacer" />
     <Nuxt />
     <Footer />
   </div>
@@ -18,7 +19,7 @@ export default {
 </script>
 
 <style>
-  body {
-    line-height: 0;
+  .spacer {
+    height: 52px;
   }
 </style>

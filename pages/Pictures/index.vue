@@ -10,7 +10,7 @@
 
 <script>
 import axios from 'axios'
-import Picture from '../../components/Picture'
+import Picture from '@/components/Picture'
 export default {
   name: 'Images',
   components: {
@@ -41,10 +41,6 @@ export default {
 </script>
 
 <style>
-.section {
-  padding: 6rem;
-}
-
 @media screen and (max-width: 768px) {
   .section {
     padding: 6rem 2.5rem;
