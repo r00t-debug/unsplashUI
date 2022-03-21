@@ -1,6 +1,8 @@
 # unsplash-client
 
-A mini project of mine to get myself familiar with the Nuxt.js Framework. The project is a basic website that fetches images from the Unsplash API and renders them in a nice format. 
+A mini project of mine to get myself familiar with the Nuxt.js Framework. The project is a basic website that fetches images from my profile using the Unsplash API and renders them in a nice format.
+
+[Live view](http://unsplashv2.herokuapp.com/)
 
 ## Build Setup
 

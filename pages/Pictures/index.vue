@@ -29,7 +29,7 @@ export default {
     }
 
     await axios
-      .get('https://api.unsplash.com/photos?page=1&per_page=20', config)
+      .get('https://api.unsplash.com/users/imaginaries/photos?page=1&per_page=20', config)
       .then((res) => {
         this.pictures = res.data
       })
